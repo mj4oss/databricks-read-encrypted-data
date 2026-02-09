@@ -1,0 +1,14 @@
+resources:
+  pipelines:
+    siu_processing_pipeline:
+      name: "SIU Processing Pipeline"
+      catalog: "catalog_demos"
+      schema: "bronze"
+      channel: "PREVIEW"
+      serverless: true
+      libraries:
+        - notebook:
+            path: ../src/notebooks/siu.ipynb
+      configuration:
+        bronze_schema: ${resources.schemas.bronze_schema.name}
+        silver_phi_schema: ${resources.schemas.silver_phi_schema.name}

@@ -1,0 +1,1 @@
+https://docs.webchartnow.com/features/system-administration/interfaces/sample-hl7-messages/
