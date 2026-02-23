@@ -1,0 +1,30 @@
+{
+  "name": "hl7utils",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/cli/index.ts",
+    "lint": "biome check src",
+    "format": "biome format --write src",
+    "check-types": "tsc --noEmit",
+    "test": "vitest"
+  },
+  "engines": {
+    "node": ">=25"
+  },
+  "dependencies": {
+    "@aws-crypto/client-node": "^4.0.0",
+    "@aws-sdk/client-kms": "^3.0.0",
+    "@aws-sdk/client-s3": "^3.0.0",
+    "@aws-sdk/lib-storage": "^3.0.0",
+    "chalk": "^5.0.0",
+    "commander": "^12.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.5.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
