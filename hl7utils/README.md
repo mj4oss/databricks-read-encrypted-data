@@ -9,7 +9,7 @@ The `hl7utils` project provides a CLI and library for encrypting and decrypting 
 ## Installation
 ```bash
 cd hl7utils
-npm install
+npm ci
 ```
 
 ## Usage
